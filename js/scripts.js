@@ -1,7 +1,4 @@
 var triangle = {
-	side1: 0,
-	side2: 0,
-	side3: 0,
 	type: function() {
 		var sideArray = [this.side1, this.side2, this.side3].sort();
 
@@ -22,10 +19,6 @@ var triangle = {
 
 $(document).ready(function(){
 
-	var equilateralObject = { values:[] };
-	var isoscelesObject = { values: [] };
-	var scaleneObject = { values: [] };
-
 	$("form.triangles").submit(function(event){
 	event.preventDefault();
 
@@ -36,13 +29,10 @@ $(document).ready(function(){
 	if (triangle.type() === false) {
 		alert("Please enter a valid triangle");
 	} else if (triangle.type() === "equilateral") {
-			equilateralObject.values.push([triangle.side1, triangle.side2, triangle.side3]);
 			$("div#equilateral").append("<li>"+ triangle.side1 + "," + triangle.side2 + "," + triangle.side3 + " </li>");
 	} else if (triangle.type() === "isosceles") {
-			isoscelesObject.values.push([triangle.side1, triangle.side2, triangle.side3]);
 			$("div#isosceles").append("<li>"+ triangle.side1 + "," + triangle.side2 + "," + triangle.side3 + " </li>");
 	} else {
-			scaleneObject.values.push([triangle.side1, triangle.side2, triangle.side3]);
 			$("div#scalene").append("<li>"+ triangle.side1 + "," + triangle.side2 + "," + triangle.side3 + " </li>");
 	}
 
