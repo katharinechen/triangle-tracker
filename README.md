@@ -1,9 +1,22 @@
-<h1>Triangle Tracker</h1>
+#Triangle Tracker 
 
-Written by Sergii and Katharine Chen.
+##About
+This project was completed by Katharine Chen and [Sergii Mertsalov](https://github.com/Mind1992) on Week#2, Day#2 as part of the [Epicodus Code School](www.epicodus.com)'s "Learn how to Program" [curriculum](http://www.learnhowtoprogram.com/lessons/triangle-tracker-shipping-rate-calculator). 
 
-If a user enters an invalid triangle, pop up an alert when they try to submit the form.
+##Description 
+The goal of this project is to create a program that identify valid and invalid triangles. Valid triangles will be appropriately categorized and appended using JQuery in the appropriate section of the webpage. 
 
-You can reference your code from last week on figuring out what type of triangle three sides form. Create a method on your triangle objects called type() that returns the type of triangle it is. Hint: the method shouldn't take any arguments, as it can reference its own sides using the this keyword.
+##Functionality
+* If a user enters an invalid triangle, an alert would pop up when they tried to submit a form.
+* If a user types in a valid triangle, it will automatically sort into the right triangle category. 
 
-Don't worry about writing tests; we'll get to that in the next lesson.
+##Installation 
+Clone this repository in your terminal.
+    git clone https://github.com/katharinechen/triangle-tracker.git
+
+Open scripts.js in your browser. 
+    scripts.js 
+
+##License
+MIT
+
