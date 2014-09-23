@@ -12,9 +12,11 @@ The goal of this project is to create a program that identify valid and invalid 
 
 ##Installation 
 Clone this repository in your terminal.
+
     git clone https://github.com/katharinechen/triangle-tracker.git
 
 Open scripts.js in your browser. 
+
     scripts.js 
 
 ##License
